@@ -65,6 +65,10 @@ ctaImage.src = siteContent.cta['img-src']
 
 // Top Content
 
-const h4s = document.querySelectorAll('.top-content .text-content h4')
-h4s[0].innerText = siteContent['main-content']['features-h4']
-h4s[1].innerText = siteContent['main-content']['about-h4']
+const topContentHeaders = document.querySelectorAll('.top-content .text-content h4')
+topContentHeaders[0].innerText = siteContent['main-content']['features-h4']
+topContentHeaders[1].innerText = siteContent['main-content']['about-h4']
+
+const topContentParagraphs = document.querySelectorAll('.top-content .text-content p')
+topContentParagraphs[0].innerText = siteContent['main-content']['features-content']
+topContentParagraphs[1].innerText = siteContent['main-content']['about-content']
