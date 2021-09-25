@@ -65,11 +65,11 @@ ctaImage.src = siteContent.cta['img-src']
 
 // Top Content
 
-const topContentHeaders = document.querySelectorAll('.top-content .text-content h4')
+const topContentHeaders = document.querySelectorAll('.top-content h4')
 topContentHeaders[0].innerText = siteContent['main-content']['features-h4']
 topContentHeaders[1].innerText = siteContent['main-content']['about-h4']
 
-const topContentParagraphs = document.querySelectorAll('.top-content .text-content p')
+const topContentParagraphs = document.querySelectorAll('.top-content p')
 topContentParagraphs[0].innerText = siteContent['main-content']['features-content']
 topContentParagraphs[1].innerText = siteContent['main-content']['about-content']
 
@@ -77,3 +77,10 @@ topContentParagraphs[1].innerText = siteContent['main-content']['about-content']
 
 const middleImage = document.querySelector('#middle-img')
 middleImage.src = siteContent['main-content']['middle-img-src']
+
+// Bottom Content
+// services product vision
+const bottomContentHeaders = document.querySelectorAll('.bottom-content h4')
+bottomContentHeaders[0].innerText = siteContent['main-content']['services-h4']
+bottomContentHeaders[1].innerText = siteContent['main-content']['product-h4']
+bottomContentHeaders[2].innerText = siteContent['main-content']['vision-h4']
