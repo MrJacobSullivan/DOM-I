@@ -49,7 +49,7 @@ navAnchors.forEach((a, i) => {
   a.textContent = siteContent.nav[`nav-item-${i + 1}`]
 })
 
-const logo = document.getElementById('logo-img')
+const logo = document.querySelector('#logo-img')
 logo.setAttribute('src', siteContent['nav']['img-src'])
 
 // CTA Content
@@ -72,3 +72,8 @@ topContentHeaders[1].innerText = siteContent['main-content']['about-h4']
 const topContentParagraphs = document.querySelectorAll('.top-content .text-content p')
 topContentParagraphs[0].innerText = siteContent['main-content']['features-content']
 topContentParagraphs[1].innerText = siteContent['main-content']['about-content']
+
+// Middle Content
+
+const middleImage = document.querySelector('#middle-img')
+middleImage.src = siteContent['main-content']['middle-img-src']
