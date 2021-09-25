@@ -47,7 +47,23 @@ const siteContent = {
 const navAnchors = document.querySelectorAll('nav a')
 navAnchors.forEach((a, i) => {
   a.textContent = siteContent.nav[`nav-item-${i + 1}`]
+  a.style.color = 'green'
 })
+
+const first = document.createElement('a')
+first.innerText = 'FIRST'
+first.href = '#'
+first.style.color = 'green'
+
+const last = document.createElement('a')
+last.innerText = 'LAST'
+last.href = '#'
+last.style.color = 'green'
+
+const nav = document.querySelector('nav')
+
+nav.prepend(first)
+nav.appendChild(last)
 
 const logo = document.querySelector('#logo-img')
 logo.setAttribute('src', siteContent['nav']['img-src'])
