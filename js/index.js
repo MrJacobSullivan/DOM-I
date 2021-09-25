@@ -79,8 +79,13 @@ const middleImage = document.querySelector('#middle-img')
 middleImage.src = siteContent['main-content']['middle-img-src']
 
 // Bottom Content
-// services product vision
+
 const bottomContentHeaders = document.querySelectorAll('.bottom-content h4')
 bottomContentHeaders[0].innerText = siteContent['main-content']['services-h4']
 bottomContentHeaders[1].innerText = siteContent['main-content']['product-h4']
 bottomContentHeaders[2].innerText = siteContent['main-content']['vision-h4']
+
+const bottomContentParagraphs = document.querySelectorAll('.bottom-content p')
+bottomContentParagraphs[0].innerText = siteContent['main-content']['services-content']
+bottomContentParagraphs[1].innerText = siteContent['main-content']['product-content']
+bottomContentParagraphs[2].innerText = siteContent['main-content']['vision-content']
