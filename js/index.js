@@ -56,3 +56,6 @@ h1.innerHTML = siteContent.cta.h1.replaceAll(' ', '<br> ')
 
 const button = document.querySelector('button')
 button.innerText = siteContent.cta.button
+
+const ctaImage = document.querySelector('#cta-img')
+ctaImage.src = siteContent.cta['img-src']
