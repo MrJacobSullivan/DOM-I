@@ -42,14 +42,17 @@ const siteContent = {
   },
 }
 
+// Header Content
+
 const navAnchors = document.querySelectorAll('nav a')
 navAnchors.forEach((a, i) => {
   a.textContent = siteContent.nav[`nav-item-${i + 1}`]
 })
 
-// Example: Update the img src for the logo
 const logo = document.getElementById('logo-img')
 logo.setAttribute('src', siteContent['nav']['img-src'])
+
+// CTA Content
 
 const h1 = document.querySelector('h1')
 h1.innerHTML = siteContent.cta.h1.replaceAll(' ', '<br> ')
@@ -59,3 +62,9 @@ button.innerText = siteContent.cta.button
 
 const ctaImage = document.querySelector('#cta-img')
 ctaImage.src = siteContent.cta['img-src']
+
+// Top Content
+
+const h4s = document.querySelectorAll('.top-content .text-content h4')
+h4s[0].innerText = siteContent['main-content']['features-h4']
+h4s[1].innerText = siteContent['main-content']['about-h4']
