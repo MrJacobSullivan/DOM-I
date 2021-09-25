@@ -67,14 +67,18 @@ nav.appendChild(last)
 
 const logo = document.querySelector('#logo-img')
 logo.setAttribute('src', siteContent['nav']['img-src'])
+logo.style.opacity = '50%'
 
 // CTA Content
 
 const h1 = document.querySelector('h1')
 h1.innerHTML = siteContent.cta.h1.replaceAll(' ', '<br> ')
+h1.style.fontFamily = 'monospace'
 
 const button = document.querySelector('button')
 button.innerText = siteContent.cta.button
+button.style.borderRadius = '0.4rem'
+button.onclick = () => console.log('hello')
 
 const ctaImage = document.querySelector('#cta-img')
 ctaImage.src = siteContent.cta['img-src']
@@ -84,10 +88,14 @@ ctaImage.src = siteContent.cta['img-src']
 const topContentHeaders = document.querySelectorAll('.top-content h4')
 topContentHeaders[0].innerText = siteContent['main-content']['features-h4']
 topContentHeaders[1].innerText = siteContent['main-content']['about-h4']
+topContentHeaders.forEach((header) => {
+  header.style.color = 'red'
+})
 
 const topContentParagraphs = document.querySelectorAll('.top-content p')
 topContentParagraphs[0].innerText = siteContent['main-content']['features-content']
 topContentParagraphs[1].innerText = siteContent['main-content']['about-content']
+topContentParagraphs.forEach((p) => (p.style.color = 'blue'))
 
 // Middle Content
 
