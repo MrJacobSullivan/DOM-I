@@ -53,3 +53,6 @@ logo.setAttribute('src', siteContent['nav']['img-src'])
 
 const h1 = document.querySelector('h1')
 h1.innerHTML = siteContent.cta.h1.replaceAll(' ', '<br> ')
+
+const button = document.querySelector('button')
+button.innerText = siteContent.cta.button
