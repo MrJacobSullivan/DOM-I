@@ -89,3 +89,14 @@ const bottomContentParagraphs = document.querySelectorAll('.bottom-content p')
 bottomContentParagraphs[0].innerText = siteContent['main-content']['services-content']
 bottomContentParagraphs[1].innerText = siteContent['main-content']['product-content']
 bottomContentParagraphs[2].innerText = siteContent['main-content']['vision-content']
+
+// Contact Section
+
+const contactHeader = document.querySelector('.contact h4')
+contactHeader.innerText = siteContent['contact']['contact-h4']
+
+// address phone email
+const contactParagraphs = document.querySelectorAll('.contact p')
+contactParagraphs[0].innerText = siteContent['contact']['address']
+contactParagraphs[1].innerText = siteContent['contact']['phone']
+contactParagraphs[2].innerText = siteContent['contact']['email']
