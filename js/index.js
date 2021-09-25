@@ -90,13 +90,18 @@ bottomContentParagraphs[0].innerText = siteContent['main-content']['services-con
 bottomContentParagraphs[1].innerText = siteContent['main-content']['product-content']
 bottomContentParagraphs[2].innerText = siteContent['main-content']['vision-content']
 
-// Contact Section
+// Contact Content
 
 const contactHeader = document.querySelector('.contact h4')
 contactHeader.innerText = siteContent['contact']['contact-h4']
 
-// address phone email
 const contactParagraphs = document.querySelectorAll('.contact p')
-contactParagraphs[0].innerText = siteContent['contact']['address']
+const address = siteContent['contact']['address'].split(' ')
+address.splice(4, 0, '<br>')
+contactParagraphs[0].innerHTML = address.join(' ')
 contactParagraphs[1].innerText = siteContent['contact']['phone']
 contactParagraphs[2].innerText = siteContent['contact']['email']
+
+// Footer Content
+const footerParagraphs = document.querySelector('footer p')
+footerParagraphs.innerText = siteContent.footer['copyright']
