@@ -50,3 +50,6 @@ navAnchors.forEach((a, i) => {
 // Example: Update the img src for the logo
 const logo = document.getElementById('logo-img')
 logo.setAttribute('src', siteContent['nav']['img-src'])
+
+const h1 = document.querySelector('h1')
+h1.innerHTML = siteContent.cta.h1.replaceAll(' ', '<br> ')
